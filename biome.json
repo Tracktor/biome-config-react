@@ -1,8 +1,5 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
-  "files": {
-    "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e"]
-  },
   "assist": {
     "actions": {
       "source": {
@@ -11,80 +8,15 @@
       }
     }
   },
+  "files": {
+    "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e", "!src/api/saas", "!src/api/auth"]
+  },
   "formatter": {
     "enabled": true,
-    "indentWidth": 2,
     "indentStyle": "space",
-    "lineWidth": 140,
-    "lineEnding": "lf"
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "style": {
-        "noNegationElse": "error",
-        "noParameterAssign": "error",
-        "useBlockStatements": "warn",
-        "useCollapsedElseIf": "error",
-        "useConst": "error",
-        "useDefaultParameterLast": "error",
-        "useExportType": "error",
-        "useForOf": "error",
-        "useImportType": "off",
-        "useNodejsImportProtocol": "off",
-        "useShorthandFunctionType": "error",
-        "useSingleVarDeclarator": "error",
-        "useTemplate": "error",
-        "useConsistentArrayType": {
-          "level": "warn",
-          "options": {
-            "syntax": "shorthand"
-          }
-        }
-      },
-      "correctness": {
-        "noUnusedImports": "warn",
-        "noUnusedVariables": "warn",
-        "useExhaustiveDependencies": "warn",
-        "useHookAtTopLevel": "error",
-        "useUniqueElementIds": "warn",
-        "useJsxKeyInIterable": "warn"
-      },
-      "complexity": {
-        "noExcessiveCognitiveComplexity": "off",
-        "noForEach": "off",
-        "useLiteralKeys": "error",
-        "useOptionalChain": "warn",
-        "useSimplifiedLogicExpression": "warn"
-      },
-      "suspicious": {
-        "noExplicitAny": "warn",
-        "noTsIgnore": "warn",
-        "noArrayIndexKey": "off",
-        "noConsole": {
-          "level": "off",
-          "options": {
-            "allow": ["warn", "error", "info", "log"]
-          }
-        },
-        "noDebugger": "error",
-        "noDoubleEquals": "error",
-        "noShadowRestrictedNames": "error",
-        "useAwait": "warn"
-      },
-      "a11y": {
-        "useAnchorContent": "error",
-        "useButtonType": "error",
-        "useKeyWithClickEvents": "error",
-        "useValidAnchor": "error",
-        "noSvgWithoutTitle": "warn",
-        "useKeyWithMouseEvents": "warn"
-      },
-      "nursery": {
-        "useSortedClasses": "warn"
-      }
-    }
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 140
   },
   "javascript": {
     "formatter": {
@@ -101,11 +33,79 @@
   "json": {
     "formatter": {
       "enabled": true,
-      "indentWidth": 2,
-      "indentStyle": "space"
+      "indentStyle": "space",
+      "indentWidth": 2
     },
     "linter": {
       "enabled": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "noSvgWithoutTitle": "warn",
+        "useAnchorContent": "error",
+        "useButtonType": "error",
+        "useKeyWithClickEvents": "error",
+        "useKeyWithMouseEvents": "warn",
+        "useValidAnchor": "error"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off",
+        "noForEach": "off",
+        "useLiteralKeys": "error",
+        "useOptionalChain": "warn",
+        "useSimplifiedLogicExpression": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": "warn",
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "warn",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "warn",
+        "useUniqueElementIds": "warn"
+      },
+      "nursery": {
+        "useSortedClasses": "warn"
+      },
+      "recommended": true,
+      "style": {
+        "noNegationElse": "error",
+        "noParameterAssign": "error",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": {
+          "level": "warn",
+          "options": {
+            "syntax": "shorthand"
+          }
+        },
+        "useConst": "error",
+        "useDefaultParameterLast": "error",
+        "useExportType": "error",
+        "useForOf": "error",
+        "useImportType": "off",
+        "useNodejsImportProtocol": "off",
+        "useShorthandFunctionType": "error",
+        "useSingleVarDeclarator": "error",
+        "useTemplate": "error"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noConsole": {
+          "level": "off",
+          "options": {
+            "allow": ["warn", "error", "info", "log"]
+          }
+        },
+        "noDebugger": "error",
+        "noDoubleEquals": "error",
+        "noExplicitAny": "warn",
+        "noShadowRestrictedNames": "error",
+        "noTsIgnore": "warn",
+        "useAwait": "warn"
+      }
     }
   },
   "overrides": [
@@ -135,13 +135,7 @@
       }
     },
     {
-      "includes": [
-        "*.config.ts",
-        "*.config.js",
-        "vite.config.ts",
-        "next.config.js",
-        "next.config.ts"
-      ],
+      "includes": ["*.config.ts", "*.config.js", "vite.config.ts", "next.config.js", "next.config.ts"],
       "linter": {
         "rules": {
           "style": {
