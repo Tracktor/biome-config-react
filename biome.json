@@ -1,7 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
   "files": {
-    "includes": ["!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e"]
+    "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e"]
   },
   "assist": {
     "actions": {
