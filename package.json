@@ -1,0 +1,34 @@
+{
+	"name": "@tracktor/biome-config-react",
+	"version": "1.0.0",
+	"description": "Tracktor shared Biome config for React projects",
+	"main": "index.json",
+	"files": [
+		"index.json",
+		"README.md"
+	],
+	"license": "MIT",
+	"author": "Kevin Graff",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:Tracktor/biome-config-react.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Tracktor/biome-config-react/issues"
+	},
+	"homepage": "https://github.com/Tracktor/biome-config-react#readme",
+	"peerDependencies": {
+		"@biomejs/biome": ">=2.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.6"
+	},
+	"keywords": [
+		"react",
+		"biome",
+		"linter",
+		"formatter",
+		"javascript",
+		"typescript"
+	]
+}
