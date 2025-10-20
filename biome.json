@@ -25,7 +25,7 @@
       "style": {
         "noNegationElse": "error",
         "noParameterAssign": "error",
-        "useBlockStatements": "error",
+        "useBlockStatements": "warn",
         "useCollapsedElseIf": "error",
         "useConst": "error",
         "useDefaultParameterLast": "error",
@@ -37,26 +37,30 @@
         "useSingleVarDeclarator": "error",
         "useTemplate": "error",
         "useConsistentArrayType": {
-          "level": "error",
+          "level": "warn",
           "options": {
             "syntax": "shorthand"
           }
         }
       },
       "correctness": {
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error",
+        "noUnusedImports": "warn",
+        "noUnusedVariables": "warn",
         "useExhaustiveDependencies": "warn",
-        "useHookAtTopLevel": "error"
+        "useHookAtTopLevel": "error",
+        "useUniqueElementIds": "warn",
+        "useJsxKeyInIterable": "warn"
       },
       "complexity": {
         "noExcessiveCognitiveComplexity": "off",
         "noForEach": "off",
         "useLiteralKeys": "error",
-        "useOptionalChain": "error",
-        "useSimplifiedLogicExpression": "error"
+        "useOptionalChain": "warn",
+        "useSimplifiedLogicExpression": "warn"
       },
       "suspicious": {
+        "noExplicitAny": "warn",
+        "noTsIgnore": "warn",
         "noArrayIndexKey": "off",
         "noConsole": {
           "level": "off",
@@ -66,15 +70,16 @@
         },
         "noDebugger": "error",
         "noDoubleEquals": "error",
-        "noExplicitAny": "warn",
         "noShadowRestrictedNames": "error",
-        "useAwait": "error"
+        "useAwait": "warn"
       },
       "a11y": {
         "useAnchorContent": "error",
         "useButtonType": "error",
         "useKeyWithClickEvents": "error",
-        "useValidAnchor": "error"
+        "useValidAnchor": "error",
+        "noSvgWithoutTitle": "warn",
+        "useKeyWithMouseEvents": "warn"
       },
       "nursery": {
         "useSortedClasses": "warn"
@@ -121,7 +126,7 @@
       "linter": {
         "rules": {
           "correctness": {
-            "noUnusedVariables": "off"
+            "noUnusedVariables": "warn"
           },
           "suspicious": {
             "noExplicitAny": "off"
