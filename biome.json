@@ -1,162 +1,164 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
-	"assist": {
-		"actions": {
-			"source": {
-				"organizeImports": "on",
-				"useSortedKeys": "on"
-			}
-		}
-	},
-	"formatter": {
-		"enabled": true,
-		"indentWidth": 2,
-		"indentStyle": "space",
-		"lineWidth": 140,
-		"lineEnding": "lf"
-	},
-
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"style": {
-				"noNegationElse": "error",
-				"noParameterAssign": "error",
-				"useBlockStatements": "error",
-				"useCollapsedElseIf": "error",
-				"useConst": "error",
-				"useDefaultParameterLast": "error",
-				"useExportType": "error",
-				"useForOf": "error",
-				"useImportType": "off",
-				"useNodejsImportProtocol": "off",
-				"useShorthandFunctionType": "error",
-				"useSingleVarDeclarator": "error",
-				"useTemplate": "error",
-				"useConsistentArrayType": {
-					"level": "error",
-					"options": {
-						"syntax": "shorthand"
-					}
-				}
-			},
-			"correctness": {
-				"noUnusedImports": "error",
-				"noUnusedVariables": "error",
-				"useExhaustiveDependencies": "warn",
-				"useHookAtTopLevel": "error"
-			},
-			"complexity": {
-				"noExcessiveCognitiveComplexity": "off",
-				"noForEach": "off",
-				"useLiteralKeys": "error",
-				"useOptionalChain": "error",
-				"useSimplifiedLogicExpression": "error"
-			},
-			"suspicious": {
-				"noArrayIndexKey": "off",
-				"noConsole": {
-					"level": "off",
-					"options": {
-						"allow": ["warn", "error", "info", "log"]
-					}
-				},
-				"noDebugger": "error",
-				"noDoubleEquals": "error",
-				"noExplicitAny": "warn",
-				"noShadowRestrictedNames": "error",
-				"useAwait": "error"
-			},
-			"a11y": {
-				"useAnchorContent": "error",
-				"useButtonType": "error",
-				"useKeyWithClickEvents": "error",
-				"useValidAnchor": "error"
-			},
-			"nursery": {
-				"useSortedClasses": "warn"
-			}
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"arrowParentheses": "always",
-			"bracketSameLine": false,
-			"bracketSpacing": true,
-			"jsxQuoteStyle": "double",
-			"quoteProperties": "asNeeded",
-			"quoteStyle": "double",
-			"semicolons": "always",
-			"trailingCommas": "all"
-		}
-	},
-	"json": {
-		"formatter": {
-			"enabled": true,
-			"indentWidth": 2,
-			"indentStyle": "space"
-		},
-		"linter": {
-			"enabled": true
-		}
-	},
-	"overrides": [
-		{
-			"includes": [
-				"*.test.ts",
-				"*.test.tsx",
-				"*.test.js",
-				"*.test.jsx",
-				"*.spec.ts",
-				"*.spec.tsx",
-				"*.spec.js",
-				"*.spec.jsx",
-				"*.stories.tsx",
-				"*.cy.ts",
-				"*.cy.js"
-			],
-			"linter": {
-				"rules": {
-					"correctness": {
-						"noUnusedVariables": "off"
-					},
-					"suspicious": {
-						"noExplicitAny": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": [
-				"*.config.ts",
-				"*.config.js",
-				"vite.config.ts",
-				"next.config.js",
-				"next.config.ts"
-			],
-			"linter": {
-				"rules": {
-					"style": {
-						"useNodejsImportProtocol": "off"
-					},
-					"suspicious": {
-						"noExplicitAny": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": ["next-env.d.ts", "react-app-env.d.ts", "vite-env.d.ts"],
-			"linter": {
-				"enabled": false
-			}
-		},
-		{
-			"includes": ["e2e/**"],
-			"linter": {
-				"enabled": false
-			}
-		}
-	]
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+  "files": {
+    "includes": ["!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e"]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedKeys": "on"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 140,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNegationElse": "error",
+        "noParameterAssign": "error",
+        "useBlockStatements": "error",
+        "useCollapsedElseIf": "error",
+        "useConst": "error",
+        "useDefaultParameterLast": "error",
+        "useExportType": "error",
+        "useForOf": "error",
+        "useImportType": "off",
+        "useNodejsImportProtocol": "off",
+        "useShorthandFunctionType": "error",
+        "useSingleVarDeclarator": "error",
+        "useTemplate": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "shorthand"
+          }
+        }
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "useExhaustiveDependencies": "warn",
+        "useHookAtTopLevel": "error"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off",
+        "noForEach": "off",
+        "useLiteralKeys": "error",
+        "useOptionalChain": "error",
+        "useSimplifiedLogicExpression": "error"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noConsole": {
+          "level": "off",
+          "options": {
+            "allow": ["warn", "error", "info", "log"]
+          }
+        },
+        "noDebugger": "error",
+        "noDoubleEquals": "error",
+        "noExplicitAny": "warn",
+        "noShadowRestrictedNames": "error",
+        "useAwait": "error"
+      },
+      "a11y": {
+        "useAnchorContent": "error",
+        "useButtonType": "error",
+        "useKeyWithClickEvents": "error",
+        "useValidAnchor": "error"
+      },
+      "nursery": {
+        "useSortedClasses": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "indentWidth": 2,
+      "indentStyle": "space"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "*.test.ts",
+        "*.test.tsx",
+        "*.test.js",
+        "*.test.jsx",
+        "*.spec.ts",
+        "*.spec.tsx",
+        "*.spec.js",
+        "*.spec.jsx",
+        "*.stories.tsx",
+        "*.cy.ts",
+        "*.cy.js"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off"
+          },
+          "suspicious": {
+            "noExplicitAny": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": [
+        "*.config.ts",
+        "*.config.js",
+        "vite.config.ts",
+        "next.config.js",
+        "next.config.ts"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNodejsImportProtocol": "off"
+          },
+          "suspicious": {
+            "noExplicitAny": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["next-env.d.ts", "react-app-env.d.ts", "vite-env.d.ts"],
+      "linter": {
+        "enabled": false
+      }
+    },
+    {
+      "includes": ["e2e/**"],
+      "linter": {
+        "enabled": false
+      }
+    }
+  ]
 }

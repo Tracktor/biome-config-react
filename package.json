@@ -1,6 +1,6 @@
 {
 	"name": "@tracktor/biome-config-react",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Tracktor shared Biome config for React projects",
 	"main": "biome.json",
 	"files": [
