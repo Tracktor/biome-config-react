@@ -2,9 +2,9 @@
 	"name": "@tracktor/biome-config-react",
 	"version": "1.0.0",
 	"description": "Tracktor shared Biome config for React projects",
-	"main": "index.json",
+	"main": "biome.json",
 	"files": [
-		"index.json",
+      "biome.json",
 		"README.md"
 	],
 	"license": "MIT",
