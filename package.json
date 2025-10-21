@@ -4,9 +4,12 @@
 	"description": "Tracktor shared Biome config for React projects",
 	"main": "biome.json",
 	"files": [
-      "biome.json",
+		"biome.json",
 		"README.md"
 	],
+    "scripts": {
+      "release": "commit-and-tag-version"
+    },
 	"license": "MIT",
 	"author": "Kevin Graff",
 	"repository": {
@@ -30,5 +33,8 @@
 		"formatter",
 		"javascript",
 		"typescript"
-	]
+	],
+	"devDependencies": {
+		"commit-and-tag-version": "^12.6.0"
+	}
 }
