@@ -43,9 +43,6 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "performance": {
-        "noAccumulatingSpread": "off"
-      },
       "a11y": {
         "noSvgWithoutTitle": "warn",
         "useAnchorContent": "error",
@@ -60,8 +57,9 @@
         "useLiteralKeys": "error",
         "useOptionalChain": "warn",
         "useSimplifiedLogicExpression": {
+          "fix": "safe",
           "level": "warn",
-          "fix": "none"
+          "options": {}
         }
       },
       "correctness": {
@@ -74,6 +72,9 @@
       },
       "nursery": {
         "useSortedClasses": "warn"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
       },
       "recommended": true,
       "style": {
