@@ -24,6 +24,11 @@ jobs:
       - name: 📦 Install dependencies
         run: bun install
 
+      - name: 🧑 Configure Git identity
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: 🏷️ Bump version & generate changelog
         id: bump
         run: |
@@ -36,8 +41,6 @@ jobs:
       - name: 🚀 Push changes and tags
         if: steps.bump.outputs.prev_version != steps.bump.outputs.new_version
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git push origin HEAD:${{ github.ref }}
           git push --tags
 
