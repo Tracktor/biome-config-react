@@ -59,7 +59,10 @@
         "noForEach": "off",
         "useLiteralKeys": "error",
         "useOptionalChain": "warn",
-        "useSimplifiedLogicExpression": "warn"
+        "useSimplifiedLogicExpression": {
+          "level": "warn",
+          "fix": "none"
+        }
       },
       "correctness": {
         "noUnusedImports": "warn",
