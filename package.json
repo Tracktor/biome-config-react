@@ -1,15 +1,15 @@
 {
 	"name": "@tracktor/biome-config-react",
-	"version": "1.0.8",
+	"version": "1.1.0",
 	"description": "Tracktor shared Biome config for React projects",
 	"main": "biome.json",
 	"files": [
 		"biome.json",
 		"README.md"
 	],
-    "scripts": {
-      "release": "commit-and-tag-version"
-    },
+	"scripts": {
+		"release": "commit-and-tag-version"
+	},
 	"license": "MIT",
 	"author": "Kevin Graff",
 	"repository": {
