@@ -9,7 +9,7 @@
     }
   },
   "files": {
-    "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e", "!src/api/saas", "!src/api/auth"]
+    "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e", "!src/api"]
   },
   "formatter": {
     "enabled": true,
