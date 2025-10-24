@@ -8,6 +8,11 @@
       }
     }
   },
+  "css": {
+    "parser": {
+      "cssModules": false
+    }
+  },
   "files": {
     "includes": ["src/**", "!node_modules", "!dist", "!build", "!coverage", "!.venv", "!e2e", "!src/api"]
   },
@@ -113,6 +118,7 @@
         "noExplicitAny": "warn",
         "noShadowRestrictedNames": "error",
         "noTsIgnore": "warn",
+        "noUnknownAtRules": "off",
         "useAwait": "warn"
       }
     }
