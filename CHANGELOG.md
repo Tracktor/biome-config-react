@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Tracktor/biome-config-react/compare/v1.2.0...v1.3.0) (2025-10-24)
+
+
+### ✨ Features
+
+* add CSS parser configuration to biome.json ([a01c92f](https://github.com/Tracktor/biome-config-react/commit/a01c92fc8ab07396a856a456146566a4e13d7fc9))
+
 ## [1.2.0](https://github.com/Tracktor/biome-config-react/compare/v1.1.1...v1.2.0) (2025-10-23)
 
 
